@@ -1,0 +1,219 @@
+/* Your custom css code goes here */
+
+
+/* Search Box Start */
+
+.boxm{
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+  }
+  .box{
+    position: relative;
+  }
+  
+  .input {
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    background: none;
+    border: 4px solid #22eaaa;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 26px;
+    color: #22eaaa;
+    outline: none;
+    transition: .5s;
+  }
+  .box:hover input{
+    width: 350px;
+    background: #3b3640;
+    border-radius: 10px;
+  }
+  .box i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%,-50%);
+    font-size: 26px;
+    color: #22eaaa;
+    transition: .2s;
+  }
+  .box:hover i{
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  /* Add some basic styling */
+  #search-container {
+    position: relative;
+    width: 350px;
+  }
+  
+  #search-box {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  #suggestions-container {
+    position: absolute;
+    top: 100%;
+    left: 14px;
+    width: 90%;
+    max-height: 200px; /* Set the maximum height for the suggestions container */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+}
+  
+  .suggestion {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    width: 60%;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .suggestion img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  
+  /* Search Box End */
+
+  .boldt {
+    color: #ffffff;
+    font-size: 41px;
+    display: block;
+    font-weight: 900;
+    padding-top: 130px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .smartalbum-logo{
+    margin-left: -3%;
+    margin-top: -3%;
+    width: 30%;
+    margin-bottom: -9%;
+    right: 20%;
+  }
+  .nav1{
+    margin-left: 29%;
+  }
+  .top1{
+    margin-top: -15%;
+  }
+  .top2{
+    margin-top: -25%;
+  }
+
+@media screen and (max-width: 768px) {
+  .boldt {
+    color: #ffffff;
+    font-size: 41px;
+    display: block;
+    font-weight: 900;
+    padding-top: 130px;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .smartalbum-logo{
+    margin-left: 0%;
+    margin-top: -8%;
+    width: 30%;
+    margin-bottom: -16%;
+  }
+  .nav1{
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .smartalbum-logo{
+    margin-left: 0%;
+    margin-top: -15%;
+    width: 35%;
+  }
+  .nav1{
+    margin-left: 40%;
+    margin-top: -7%;
+  }
+  .top1{
+    margin-top: -30%;
+  }
+  .top2{
+    margin-top: -30%;
+  }
+  #suggestions-container {
+    position: absolute;
+    top: 100%;
+    left: 14px;
+    width: 90%;
+    max-height: 120px; /* Set the maximum height for the suggestions container */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+  }
+  .boldt {
+    color: #ffffff;
+    font-size: 41px;
+    display: block;
+    font-weight: 900;
+    padding-top: 150px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .suggestion {
+    display: flex;
+    align-items: center;
+    padding:20px;
+    cursor: pointer;
+    width: 60%;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  #search-container {
+    position: relative;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .top1{
+    margin-top: -10%;
+  }
+  .top2{
+    margin-top: -40%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .smartalbum-logo{
+    margin-left: 0%;
+    margin-top: -15%;
+    width: 35%;
+  }
+  .nav1{
+    margin-left: 24%;
+  }
+  .top1{
+    margin-top: 0%;
+  }
+  .top2{
+    margin-top: -30%;
+  }
+  .top3{
+    margin-top: 5%;
+  }
+}
